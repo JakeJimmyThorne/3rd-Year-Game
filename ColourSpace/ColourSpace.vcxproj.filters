@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\System">
+      <UniqueIdentifier>{0797444c-4b77-4a51-9194-3a27a638e0f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\System">
+      <UniqueIdentifier>{d1fc28ed-119c-4af4-8741-71bf83ce2ccd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utilities">
+      <UniqueIdentifier>{29fd824a-871f-4a8c-8674-6bbb092e9278}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utilities">
+      <UniqueIdentifier>{9bc5091f-8a57-4d5e-b12c-faeb629f29b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Managers">
+      <UniqueIdentifier>{3ded3e59-4b91-4b84-8d3e-d95d3a5b73f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Managers">
+      <UniqueIdentifier>{9baf4d6b-eeaf-4d97-96ec-ab87061931f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Objects">
+      <UniqueIdentifier>{5f3faca7-9998-426f-ab18-e9b49100fbfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objects">
+      <UniqueIdentifier>{e80d40e1-e50d-4e80-8824-5d2aa8de573e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objects\Modules">
+      <UniqueIdentifier>{5e4fdab5-4ad0-4e8d-aa2b-33b0e948c265}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{f6d3d192-f1c4-48bf-8c6f-3d5f0988ecbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Objects\Modules">
+      <UniqueIdentifier>{80b70772-aaf8-406c-8bf5-5f9f3e335219}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Rendering">
+      <UniqueIdentifier>{16bf3661-8508-42c3-9809-e5df583eac41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Rendering">
+      <UniqueIdentifier>{1c492255-5883-446f-aa1a-2c386f4c041a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Objects\UI Objects">
+      <UniqueIdentifier>{1ec3dc8a-a8f1-42ef-87d4-231aef26207f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objects\UI Objects">
+      <UniqueIdentifier>{cafbf555-d740-4a79-9350-38e67a86766f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="d3dclass.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="gameobject.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="inputmanager.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="system.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="timer.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\input.cpp">
+      <Filter>Source Files\Objects\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\quad.cpp">
+      <Filter>Source Files\Objects\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\sound.cpp">
+      <Filter>Source Files\Objects\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\texture.cpp">
+      <Filter>Source Files\Objects\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\transform.cpp">
+      <Filter>Source Files\Objects\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="Rendering\textureshader.cpp">
+      <Filter>Source Files\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Rendering\renderer.cpp">
+      <Filter>Source Files\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="soundobject.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="fps.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="camera.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="player.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="uiobject.cpp">
+      <Filter>Source Files\Objects\UI Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="object2d.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="score.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="fluidgrid.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="menuscene.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="gamescene.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="imagecrawl.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="bucketai.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="d3dclass.h">
+      <Filter>Header Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="gameobject.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="inputmanager.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="system.h">
+      <Filter>Header Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="timer.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\input.h">
+      <Filter>Header Files\Objects\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\quad.h">
+      <Filter>Header Files\Objects\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\sound.h">
+      <Filter>Header Files\Objects\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\texture.h">
+      <Filter>Header Files\Objects\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\transform.h">
+      <Filter>Header Files\Objects\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="Rendering\renderer.h">
+      <Filter>Header Files\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Rendering\textureshader.h">
+      <Filter>Header Files\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="soundobject.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="fps.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="camera.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="player.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="settings.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="uiobject.h">
+      <Filter>Header Files\Objects\UI Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="object2d.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="score.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="fluidgrid.h">
+      <Filter>Header Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="menuscene.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="gamescene.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="imagecrawl.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="bucketai.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="utility.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="texture.ps">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="texture.vs">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+</Project>

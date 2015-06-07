@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D2251FC8-6600-4954-A636-FFE357C63FB2}</ProjectGuid>
+    <RootNamespace>RefractiveIndex</RootNamespace>
+    <ProjectName>ColourSpace</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>..\ColourSpace\SDKs\DX11\Include;..\ColourSpace\SDKs\libcurl\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>..\ColourSpace\SDKs\DX11\Lib\x86;..\ColourSpace\SDKs\libcurl\lib;$(LibraryPath)    </LibraryPath>
+    <ExcludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(MSBuild_ExecutablePath);$(VC_LibraryPath_x86);</ExcludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>..\ColourSpace\SDKs\DX11\Include;..\ColourSpace\SDKs\libcurl\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\ColourSpace\SDKs\DX11\Lib\x86;..\ColourSpace\SDKs\libcurl\lib;$(LibraryPath)    </LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <ShowIncludes>false</ShowIncludes>
+      <AdditionalIncludeDirectories>..\ColourSpace\SDKs\SFML-2.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>XInput.lib;dinput8.lib;dxguid.lib;sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;sfml-audio-d.lib;openal32.lib;sndfile.lib;libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>..\ColourSpace\SDKs\SFML-2.2\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <Profile>true</Profile>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\ColourSpace\SDKs\SFML-2.2\include;..\CSFunctionLibrary;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>XInput.lib;dinput8.lib;dxguid.lib;libcurl.lib;sfml-graphics.lib;sfml-window.lib;sfml-system.lib;sfml-audio.lib;openal32.lib;sndfile.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>..\ColourSpace\SDKs\SFML-2.2\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="bucketai.cpp" />
+    <ClCompile Include="fluidgrid.cpp" />
+    <ClCompile Include="fps.cpp" />
+    <ClCompile Include="imagecrawl.cpp" />
+    <ClCompile Include="menuscene.cpp" />
+    <ClCompile Include="camera.cpp" />
+    <ClCompile Include="d3dclass.cpp" />
+    <ClCompile Include="gameobject.cpp" />
+    <ClCompile Include="inputmanager.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Modules\input.cpp" />
+    <ClCompile Include="Modules\quad.cpp" />
+    <ClCompile Include="Modules\sound.cpp" />
+    <ClCompile Include="Modules\texture.cpp" />
+    <ClCompile Include="Modules\transform.cpp" />
+    <ClCompile Include="object2d.cpp" />
+    <ClCompile Include="player.cpp" />
+    <ClCompile Include="Rendering\renderer.cpp" />
+    <ClCompile Include="Rendering\textureshader.cpp" />
+    <ClCompile Include="gamescene.cpp" />
+    <ClCompile Include="score.cpp" />
+    <ClCompile Include="soundobject.cpp" />
+    <ClCompile Include="system.cpp" />
+    <ClCompile Include="timer.cpp" />
+    <ClCompile Include="uiobject.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bucketai.h" />
+    <ClInclude Include="fluidgrid.h" />
+    <ClInclude Include="fps.h" />
+    <ClInclude Include="imagecrawl.h" />
+    <ClInclude Include="menuscene.h" />
+    <ClInclude Include="camera.h" />
+    <ClInclude Include="d3dclass.h" />
+    <ClInclude Include="gameobject.h" />
+    <ClInclude Include="inputmanager.h" />
+    <ClInclude Include="Modules\input.h" />
+    <ClInclude Include="Modules\quad.h" />
+    <ClInclude Include="Modules\sound.h" />
+    <ClInclude Include="Modules\texture.h" />
+    <ClInclude Include="Modules\transform.h" />
+    <ClInclude Include="object2d.h" />
+    <ClInclude Include="player.h" />
+    <ClInclude Include="Rendering\renderer.h" />
+    <ClInclude Include="Rendering\textureshader.h" />
+    <ClInclude Include="gamescene.h" />
+    <ClInclude Include="score.h" />
+    <ClInclude Include="settings.h" />
+    <ClInclude Include="soundobject.h" />
+    <ClInclude Include="system.h" />
+    <ClInclude Include="timer.h" />
+    <ClInclude Include="uiobject.h" />
+    <ClInclude Include="utility.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="texture.ps" />
+    <None Include="texture.vs" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
